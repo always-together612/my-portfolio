@@ -746,6 +746,13 @@ main {
 .clients-item {
   min-width: 50%;
   scroll-snap-align: start;
+  display: flex;
+  height: 100px;
+}
+
+.clients-item a{
+  display: block;
+  margin: auto;
 }
 
 .clients-item img {
@@ -785,8 +792,13 @@ main {
   margin-left: 45px;
 }
 
-.timeline-item { position: relative; }
-
+.timeline-item { 
+  position: relative;
+ }
+ .underline {
+  text-decoration: underline;
+  font-size: 15px !important;
+}
 .timeline-item:not(:last-child) { margin-bottom: 20px; }
 
 .timeline-item-title {
@@ -1403,6 +1415,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   .about .article-title { margin-bottom: 20px; }
 
   .about-text { margin-bottom: 40px; }
+
+  .about-text b{
+    font-size: 1rem;
+  }
 
   /* service */
 
